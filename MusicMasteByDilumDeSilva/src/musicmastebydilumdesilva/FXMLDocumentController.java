@@ -74,6 +74,8 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private void playVideo(ActionEvent event){
         mediaPlayer.play();
+        mediaPlayer.setRate(1);
+        
     }
     
     @FXML
