@@ -22,10 +22,10 @@
                   <Button mnemonicParsing="false" onAction="#playVideo" text="Play" />
                   <Button mnemonicParsing="false" onAction="#pauseVideo" text="Pause" />
                   <Button mnemonicParsing="false" onAction="#stopVideo" text="Stop" />
-                  <Button mnemonicParsing="false" onAction="#fasterVideo" text="&lt;&lt;&lt;" />
-                  <Button mnemonicParsing="false" onAction="#fastVideo" text="&lt;&lt;" />
-                  <Button mnemonicParsing="false" onAction="#slowVideo" text="&gt;&gt;" />
-                  <Button mnemonicParsing="false" onAction="#slowerVideo" text="&gt;&gt;&gt;" />
+                  <Button mnemonicParsing="false" onAction="#slowerVideo" text="&lt;&lt;&lt;" />
+                  <Button mnemonicParsing="false" onAction="#slowVideo" text="&lt;&lt;" />
+                  <Button mnemonicParsing="false" onAction="#fastVideo" text="&gt;&gt;" />
+                  <Button mnemonicParsing="false" onAction="#fasterVideo" text="&gt;&gt;&gt;" />
                   <Button mnemonicParsing="false" onAction="#exitVideo" text="Exit" />
                </children>
             </HBox>
