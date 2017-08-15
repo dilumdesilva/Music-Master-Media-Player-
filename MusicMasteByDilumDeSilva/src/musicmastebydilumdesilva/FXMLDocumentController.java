@@ -68,42 +68,42 @@ public class FXMLDocumentController implements Initializable {
     //(https://docs.oracle.com/javafx/2/api/javafx/scene/media/MediaPlayer.html)
     @FXML
     private void pauseVideo(ActionEvent event){
-        
+        mediaPlayer.pause();
     }
     
     @FXML
     private void playVideo(ActionEvent event){
-        
+        mediaPlayer.play();
     }
     
     @FXML
     private void stopVideo(ActionEvent event){
-        
+        mediaPlayer.stop();
     }
     
     @FXML
     private void fastVideo(ActionEvent event){
-        
+        mediaPlayer.setRate(1.5);
     }
     
     @FXML
     private void fasterVideo(ActionEvent event){
-        
+        mediaPlayer.setRate(2.5);
     }
     
     @FXML
     private void slowVideo(ActionEvent event){
-        
+        mediaPlayer.setRate(.75);
     }
     
     @FXML
     private void slowerVideo(ActionEvent event){
-        
+        mediaPlayer.setRate(.5);
     }
     
     @FXML
     private void exitVideo(ActionEvent event){
-        
+        System.exit(0);
     }
     
    
