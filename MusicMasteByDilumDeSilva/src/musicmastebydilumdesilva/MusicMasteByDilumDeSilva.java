@@ -1,7 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * MusicMaster V1.0
+ * Developed by Dilum De Silva
+ * 
  */
 package musicmastebydilumdesilva;
 
@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author ab.user
+ * @author DilumDeSilva
  */
 public class MusicMasteByDilumDeSilva extends Application {
     

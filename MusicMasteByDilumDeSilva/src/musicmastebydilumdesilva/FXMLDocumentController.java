@@ -1,30 +1,55 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * MusicMaster V1.0
+ * Developed by Dilum De Silva
+ * 
  */
 package musicmastebydilumdesilva;
 
+import java.io.*;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import javafx.scene.media.MediaView;
+import javafx.stage.FileChooser;
 
 /**
  *
- * @author ab.user
+ * @author DilumDeSilva
  */
 public class FXMLDocumentController implements Initializable {
     
+    private MediaPlayer mediaPlayer;
+    
     @FXML
-    private Label label;
+    private MediaView mediaView;
+    
+    //creating a global string variable to save file path
+    private String filePath;
     
     @FXML
     private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
+        FileChooser filechooser = new FileChooser();
+        //set file extensions to java file extension filter 
+        //if you want you can add any file type as you wish.
+        FileChooser.ExtensionFilter filter = new FileChooser.ExtensionFilter("Select a file(*.mp4)", "*.mp4","*.mp3");
+            filechooser.getExtensionFilters().add(filter);
+            File file = filechooser.showOpenDialog(null);
+            
+            //set file path to file url
+            filePath = file.toURI().toString();
+    
+            if (filePath != null)
+            {
+                Media media = new Media(filePath);
+                mediaPlayer = new MediaPlayer(media);
+                mediaView.setMediaPlayer(mediaPlayer);
+                mediaPlayer.play();
+            }
     }
     
     @Override
