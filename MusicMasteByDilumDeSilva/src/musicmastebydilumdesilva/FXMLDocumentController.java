@@ -63,6 +63,48 @@ public class FXMLDocumentController implements Initializable {
             }
     }
     
+    //methods for video controllers
+    @FXML
+    private void pauseVideo(ActionEvent event){
+        
+    }
+    
+    @FXML
+    private void playVideo(ActionEvent event){
+        
+    }
+    
+    @FXML
+    private void stopVideo(ActionEvent event){
+        
+    }
+    
+    @FXML
+    private void fastVideo(ActionEvent event){
+        
+    }
+    
+    @FXML
+    private void fasterVideo(ActionEvent event){
+        
+    }
+    
+    @FXML
+    private void slowVideo(ActionEvent event){
+        
+    }
+    
+    @FXML
+    private void slowerVideo(ActionEvent event){
+        
+    }
+    
+    @FXML
+    private void exitVideo(ActionEvent event){
+        
+    }
+    
+   
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO

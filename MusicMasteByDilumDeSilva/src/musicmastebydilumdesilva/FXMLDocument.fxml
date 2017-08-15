@@ -33,9 +33,9 @@
       </VBox>
    </bottom>
    <center>
-      <StackPane prefHeight="300.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+      <StackPane prefHeight="305.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="200.0" />
+            <MediaView fx:id="mediaView" fitHeight="205.0" fitWidth="200.0" />
          </children>
       </StackPane>
    </center>
