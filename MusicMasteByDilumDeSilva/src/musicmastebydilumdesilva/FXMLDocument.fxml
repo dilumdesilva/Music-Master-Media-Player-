@@ -9,7 +9,7 @@
 <?import javafx.scene.media.MediaView?>
 
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="musicmastebydilumdesilva.FXMLDocumentController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@MusicMasterStyleSheet.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="musicmastebydilumdesilva.FXMLDocumentController">
    <bottom>
       <VBox prefHeight="51.0" prefWidth="600.0" BorderPane.alignment="BOTTOM_CENTER">
          <children>
@@ -18,15 +18,15 @@
                   <Insets top="5.0" />
                </VBox.margin>
                <children>
-                  <Button mnemonicParsing="false" onAction="#handleButtonAction" text="OpenFile" />
-                  <Button mnemonicParsing="false" onAction="#playVideo" text="Play" />
-                  <Button mnemonicParsing="false" onAction="#pauseVideo" text="Pause" />
-                  <Button mnemonicParsing="false" onAction="#stopVideo" text="Stop" />
-                  <Button mnemonicParsing="false" onAction="#slowerVideo" text="&lt;&lt;&lt;" />
-                  <Button mnemonicParsing="false" onAction="#slowVideo" text="&lt;&lt;" />
-                  <Button mnemonicParsing="false" onAction="#fastVideo" text="&gt;&gt;" />
-                  <Button mnemonicParsing="false" onAction="#fasterVideo" text="&gt;&gt;&gt;" />
-                  <Button mnemonicParsing="false" onAction="#exitVideo" text="Exit" />
+                  <Button fx:id="openFile" mnemonicParsing="false" onAction="#handleButtonAction" text="OpenFile" />
+                  <Button fx:id="btnPlay" mnemonicParsing="false" onAction="#playVideo" text="Play" />
+                  <Button fx:id="btnPause" mnemonicParsing="false" onAction="#pauseVideo" text="Pause" />
+                  <Button fx:id="btnStop" mnemonicParsing="false" onAction="#stopVideo" text="Stop" />
+                  <Button fx:id="btnFaster" mnemonicParsing="false" onAction="#slowerVideo" text="&lt;&lt;&lt;" />
+                  <Button fx:id="btnFast" mnemonicParsing="false" onAction="#slowVideo" text="&lt;&lt;" />
+                  <Button fx:id="btnSlow" mnemonicParsing="false" onAction="#fastVideo" text="&gt;&gt;" />
+                  <Button fx:id="btnSlower" mnemonicParsing="false" onAction="#fasterVideo" text="&gt;&gt;&gt;" />
+                  <Button fx:id="btnExit" mnemonicParsing="false" onAction="#exitVideo" text="Exit" />
                </children>
             </HBox>
          </children>
