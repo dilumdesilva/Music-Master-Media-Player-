@@ -19,14 +19,14 @@
                </VBox.margin>
                <children>
                   <Button mnemonicParsing="false" onAction="#handleButtonAction" text="OpenFile" />
-                  <Button mnemonicParsing="false" text="Play" />
-                  <Button mnemonicParsing="false" text="Pause" />
-                  <Button mnemonicParsing="false" text="Stop" />
-                  <Button mnemonicParsing="false" text="&lt;&lt;&lt;" />
-                  <Button mnemonicParsing="false" text="&lt;&lt;" />
-                  <Button mnemonicParsing="false" text="&gt;&gt;" />
-                  <Button mnemonicParsing="false" text="&gt;&gt;&gt;" />
-                  <Button mnemonicParsing="false" text="Exit" />
+                  <Button mnemonicParsing="false" onAction="#playVideo" text="Play" />
+                  <Button mnemonicParsing="false" onAction="#pauseVideo" text="Pause" />
+                  <Button mnemonicParsing="false" onAction="#stopVideo" text="Stop" />
+                  <Button mnemonicParsing="false" onAction="#fasterVideo" text="&lt;&lt;&lt;" />
+                  <Button mnemonicParsing="false" onAction="#fastVideo" text="&lt;&lt;" />
+                  <Button mnemonicParsing="false" onAction="#slowVideo" text="&gt;&gt;" />
+                  <Button mnemonicParsing="false" onAction="#slowerVideo" text="&gt;&gt;&gt;" />
+                  <Button mnemonicParsing="false" onAction="#exitVideo" text="Exit" />
                </children>
             </HBox>
          </children>

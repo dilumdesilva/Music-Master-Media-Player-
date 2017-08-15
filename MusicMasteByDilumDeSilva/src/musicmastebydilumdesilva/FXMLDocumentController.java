@@ -61,9 +61,11 @@ public class FXMLDocumentController implements Initializable {
                     
                 mediaPlayer.play();
             }
-    }
+    } 
     
     //methods for video controllers
+    //you can refer java docs for further improvements of the application. 
+    //(https://docs.oracle.com/javafx/2/api/javafx/scene/media/MediaPlayer.html)
     @FXML
     private void pauseVideo(ActionEvent event){
         
