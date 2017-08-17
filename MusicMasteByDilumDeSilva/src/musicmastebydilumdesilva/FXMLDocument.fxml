@@ -84,6 +84,7 @@
       <StackPane prefHeight="305.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
             <MediaView fx:id="mediaView" fitHeight="205.0" fitWidth="200.0" />
+            <Slider fx:id="seekSlider" />
          </children>
       </StackPane>
    </center>
