@@ -13,63 +13,63 @@ and open the template in the editor.
 }
 
 #openFile{
-    -fx-background-image: url(../Icons/icons8-Music-16.png);
+    -fx-background-image: url(../Controllers/openFile.png);
     -fx-background-size:25 25;
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 #btnPlay{
-    -fx-background-image: url(../Icons/icons8-Music-16.png);
+    -fx-background-image: url(../Controllers/play.png);
     -fx-background-size:25 25;
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 #btnPause{
-    -fx-background-image: url(../Icons/icons8-Music-16.png);
+    -fx-background-image: url(../Controllers/pause.png);
     -fx-background-size:25 25;
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 #btnStop{
-    -fx-background-image: url(../Icons/icons8-Music-16.png);
+    -fx-background-image: url(../Controllers/stop.png);
     -fx-background-size:25 25;
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 #btnFast{
-    -fx-background-image: url(../Icons/icons8-Music-16.png);
+    -fx-background-image: url(../Controllers/slow.png);
     -fx-background-size:25 25;
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 #btnFaster{
-    -fx-background-image: url(../Icons/icons8-Music-16.png);
+    -fx-background-image: url(../Controllers/slower.png);
     -fx-background-size:25 25;
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 #btnSlow{
-    -fx-background-image: url(../Icons/icons8-Forward-16.png);
+    -fx-background-image: url(../Controllers/fast.png);
     -fx-background-size:25 25;
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 #btnSlower{
-    -fx-background-image: url(../Icons/icons8-Fast Forward-16.png);
+    -fx-background-image: url(../Controllers/faster.png);
     -fx-background-size:25 25;
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 #btnExit{
-    -fx-background-image: url(../Icons/icons8-Music-16.png);
+    -fx-background-image: url(../Controllers/openFile.png);
     -fx-background-size:25 25;
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
