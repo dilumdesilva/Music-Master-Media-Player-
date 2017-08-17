@@ -12,15 +12,20 @@ import javafx.beans.InvalidationListener;
 import javafx.beans.Observable;
 import javafx.beans.binding.Bindings;
 import javafx.beans.property.DoubleProperty;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
 import javafx.stage.FileChooser;
+import javafx.util.Duration;
 
 /**
  *
@@ -38,6 +43,9 @@ public class FXMLDocumentController implements Initializable {
     
     @FXML
     private Slider slider;
+    
+    @FXML
+    private Slider seekSlider;
     
     @FXML
     private void handleButtonAction(ActionEvent event) {
@@ -76,8 +84,26 @@ public class FXMLDocumentController implements Initializable {
                         
                     }
                 });
+                  
+                //setting seeking slider   
+                mediaPlayer.currentTimeProperty().addListener(new ChangeListener<Duration>() {
+                    @Override
+                    public void changed(ObservableValue<? extends Duration> observable, Duration oldValue, Duration newValue) {
+                       
+                        seekSlider.setValue(newValue.toSeconds());
+                    }
+                });
                     
-                    
+                //This is where movie will jump on to it's exact part when you clicked on the slider
+                seekSlider.setOnMouseClicked(new EventHandler<MouseEvent>() {
+                    @Override
+                    public void handle(MouseEvent event) {
+                   
+                        //this is method that give us the seeking time of the video
+                        mediaPlayer.seek(Duration.seconds(seekSlider.getValue()));
+                    }
+                });
+                
                 mediaPlayer.play();
             }
     } 
