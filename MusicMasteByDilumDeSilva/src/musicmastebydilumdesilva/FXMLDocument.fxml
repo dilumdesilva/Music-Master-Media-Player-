@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.StackPane?>
@@ -19,7 +20,7 @@
                <children>
                   <Button fx:id="openFile" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="20.0" prefWidth="20.0">
                      <HBox.margin>
-                        <Insets left="10.0" right="50.0" />
+                        <Insets left="10.0" right="25.0" />
                      </HBox.margin>
                   </Button>
                   <Button fx:id="btnPlay" mnemonicParsing="false" onAction="#playVideo" prefHeight="20.0" prefWidth="20.0">
@@ -39,7 +40,7 @@
                   </Button>
                   <Button fx:id="btnFaster" mnemonicParsing="false" onAction="#slowerVideo">
                      <HBox.margin>
-                        <Insets left="25.0" right="10.0" />
+                        <Insets right="10.0" />
                      </HBox.margin>
                      <padding>
                         <Insets right="30.0" />
@@ -63,12 +64,13 @@
                   </Button>
                   <Button fx:id="btnSlower" mnemonicParsing="false" onAction="#fasterVideo">
                      <HBox.margin>
-                        <Insets left="5.0" />
+                        <Insets left="5.0" right="20.0" />
                      </HBox.margin>
                      <padding>
                         <Insets right="30.0" />
                      </padding>
                   </Button>
+                  <Slider fx:id="slider" />
                </children>
             </HBox>
          </children>

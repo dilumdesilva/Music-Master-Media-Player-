@@ -8,12 +8,15 @@ package musicmastebydilumdesilva;
 import java.io.*;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.beans.InvalidationListener;
+import javafx.beans.Observable;
 import javafx.beans.binding.Bindings;
 import javafx.beans.property.DoubleProperty;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.control.Slider;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
@@ -32,6 +35,9 @@ public class FXMLDocumentController implements Initializable {
     
     //creating a global string variable to save file path
     private String filePath;
+    
+    @FXML
+    private Slider slider;
     
     @FXML
     private void handleButtonAction(ActionEvent event) {
@@ -58,6 +64,19 @@ public class FXMLDocumentController implements Initializable {
                     //set video boundries to mediaView size
                     width.bind(Bindings.selectDouble(mediaView.sceneProperty(), "width"));
                     height.bind(Bindings.selectDouble(mediaView.sceneProperty(), "height"));
+                    
+                    //setting volume slider , set max valoume to 100
+                    slider.setValue(mediaPlayer.getVolume()*100);
+                    slider.valueProperty().addListener(new InvalidationListener() {
+                    @Override
+                    public void invalidated(Observable observable) {
+                        
+                        //set volume to slieder
+                        mediaPlayer.setVolume(slider.getValue()/100);
+                        
+                    }
+                });
+                    
                     
                 mediaPlayer.play();
             }
