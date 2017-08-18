@@ -1,2 +1,4 @@
 # Music-Master-Media-Player-
-This is a basic media player developed using Java and this program has the ability to play any video or audio content.
+This is music player which I have developed to improve my Java-Fx knowledege. When it comes to the functionalities of the program, This application allows user to open user's video/audio files through a file search. as well as this applicaton also has other functionalities which has in a media player like VLC or Windows Media Player.
+
+The developer has the ablity to chose the file types that music master can play.
