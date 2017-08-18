@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.media.MediaView?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@MusicMasterStyleSheet.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="musicmastebydilumdesilva.FXMLDocumentController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@MusicMasterStyleSheet.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="musicmastebydilumdesilva.FXMLDocumentController">
    <bottom>
       <VBox alignment="CENTER" prefHeight="40.0" prefWidth="600.0" BorderPane.alignment="BOTTOM_CENTER">
          <children>
@@ -84,7 +84,7 @@
       <StackPane prefHeight="305.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
             <MediaView fx:id="mediaView" fitHeight="205.0" fitWidth="200.0" />
-            <Slider fx:id="seekSlider" />
+            <Slider fx:id="seekSlider" StackPane.alignment="BOTTOM_CENTER" />
          </children>
       </StackPane>
    </center>
